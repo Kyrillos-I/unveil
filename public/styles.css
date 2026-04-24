@@ -6,8 +6,8 @@
   --button-text: #131313;
   --button-surface-start: #fafff9;
   --button-surface-end: #ffffff;
-  --shadow-soft: 0 20px 20px rgba(146, 0, 34, 0.15);
-  --shadow-outline: 0 20px 40px rgba(146, 0, 34, 0.15);
+  --shadow-soft: 0 14px 24px rgba(0, 0, 0, 0.18);
+  --shadow-outline: 0 14px 28px rgba(0, 0, 0, 0.2);
   --page-gutter: clamp(16px, 4vw, 48px);
   --copy-width: min(100%, 760px);
   --form-width: min(100%, 760px);
@@ -127,7 +127,7 @@ body {
   backdrop-filter: blur(10px);
   border: 1px solid rgba(255, 255, 255, 0.7);
   box-shadow:
-    0 12px 28px rgba(146, 0, 34, 0.14),
+    0 12px 28px rgba(0, 0, 0, 0.18),
     inset 0 1px 0 rgba(255, 255, 255, 0.08);
   color: var(--foreground);
   outline: none;
@@ -147,7 +147,7 @@ body {
   border-color: #ffffff;
   box-shadow:
     0 0 0 1px rgba(255, 255, 255, 0.25),
-    0 16px 34px rgba(146, 0, 34, 0.18),
+    0 16px 34px rgba(0, 0, 0, 0.22),
     inset 0 1px 0 rgba(255, 255, 255, 0.12);
 }
 
@@ -171,7 +171,7 @@ body {
 
 .join-button:hover,
 .join-button:focus-visible {
-  box-shadow: 0 22px 28px rgba(146, 0, 34, 0.2);
+  box-shadow: 0 18px 30px rgba(0, 0, 0, 0.24);
   outline: none;
   transform: translateY(-1px);
 }
