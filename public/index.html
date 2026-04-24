@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Unveil</title>
+    <meta
+      name="description"
+      content="Join the waitlist for Unveil. 500 packs. Each shirt carries a tier."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400&family=Inter:wght@400;500&family=Playfair+Display:wght@400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <main class="page-shell">
+      <section class="phone-frame" aria-labelledby="page-title">
+        <header class="hero-header">
+          <p class="wordmark" id="page-title">Unveil</p>
+          <div class="divider" aria-hidden="true"></div>
+        </header>
+
+        <section class="intro-copy" aria-label="Collection description">
+          <p>Not a drop. Not a brand. A system.</p>
+          <p>500 packs. Each one reveals a shirt. Each shirt carries a tier.</p>
+          <p>You don’t choose it. You earn what you get.</p>
+          <p>Enter before it opens.</p>
+        </section>
+
+        <form class="waitlist-form" data-waitlist-form novalidate>
+          <label class="sr-only" for="email-top">Email address</label>
+          <input
+            class="email-input"
+            id="email-top"
+            name="email"
+            type="email"
+            inputmode="email"
+            autocomplete="email"
+            placeholder="Enter Email"
+            required
+          />
+          <button class="join-button" type="submit">Join</button>
+        </form>
+        <p class="status-message" data-status aria-live="polite"></p>
+
+        <div class="spacer" aria-hidden="true"></div>
+
+        <form class="waitlist-form waitlist-form-bottom" data-waitlist-form novalidate>
+          <label class="sr-only" for="email-bottom">Email address</label>
+          <input
+            class="email-input"
+            id="email-bottom"
+            name="email"
+            type="email"
+            inputmode="email"
+            autocomplete="email"
+            placeholder="Enter Email"
+            required
+          />
+          <button class="join-button" type="submit">Join</button>
+        </form>
+        <p class="status-message status-message-bottom" data-status aria-live="polite"></p>
+      </section>
+    </main>
+
+    <script src="/app.js"></script>
+  </body>
+</html>

@@ -1,0 +1,6 @@
+CREATE TABLE IF NOT EXISTS waitlist_emails (
+  id BIGSERIAL PRIMARY KEY,
+  email TEXT NOT NULL UNIQUE,
+  source TEXT NOT NULL DEFAULT 'landing-page',
+  created_at TIMESTAMPTZ NOT NULL DEFAULT NOW()
+);
