@@ -11,59 +11,82 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400&family=Inter:wght@400;500&family=Playfair+Display:wght@400&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400&family=Inter:wght@400;500&family=Playfair+Display:wght@400;600&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="/styles.css" />
   </head>
   <body>
     <main class="page-shell">
-      <section class="phone-frame" aria-labelledby="page-title">
+      <section class="landing-page" aria-labelledby="page-title">
         <header class="hero-header">
           <p class="wordmark" id="page-title">Unveil</p>
           <div class="divider" aria-hidden="true"></div>
         </header>
 
-        <section class="intro-copy" aria-label="Collection description">
-          <p>Not a drop. Not a brand. A system.</p>
+        <section class="content-block intro-copy" aria-label="Collection description">
+          <p>Not a drop. Not a brand. <strong class="intro-emphasis">A system.</strong></p>
           <p>500 packs. Each one reveals a shirt. Each shirt carries a tier.</p>
-          <p>You don’t choose it. You earn what you get.</p>
+          <p>You don’t choose it. Fate does.</p>
           <p>Enter before it opens.</p>
         </section>
 
-        <form class="waitlist-form" data-waitlist-form novalidate>
-          <label class="sr-only" for="email-top">Email address</label>
-          <input
-            class="email-input"
-            id="email-top"
-            name="email"
-            type="email"
-            inputmode="email"
-            autocomplete="email"
-            placeholder="Enter Email"
-            required
-          />
-          <button class="join-button" type="submit">Join</button>
-        </form>
-        <p class="status-message" data-status aria-live="polite"></p>
+        <section class="cta-block">
+          <form class="waitlist-form" data-waitlist-form novalidate>
+            <label class="sr-only" for="email-top">Email address</label>
+            <input
+              class="email-input"
+              id="email-top"
+              name="email"
+              type="email"
+              inputmode="email"
+              autocomplete="email"
+              placeholder="Enter Email"
+              required
+            />
+            <button class="join-button" type="submit">Join</button>
+          </form>
+          <p class="status-message" data-status aria-live="polite"></p>
+        </section>
 
-        <div class="spacer" aria-hidden="true"></div>
+        <section class="content-block detail-block" aria-labelledby="what-is-unveil">
+          <h2 class="section-title" id="what-is-unveil">What is Unveil?</h2>
+          <p>Unveil is a collection of limited shirts released as packs.</p>
+          <p>Each pack contains one shirt. Each shirt belongs to a rarity tier.</p>
+          <p>Some are Base. Some are 1/1. All are limited.</p>
+          <p>Once they’re gone, they’re gone.</p>
+        </section>
 
-        <form class="waitlist-form waitlist-form-bottom" data-waitlist-form novalidate>
-          <label class="sr-only" for="email-bottom">Email address</label>
-          <input
-            class="email-input"
-            id="email-bottom"
-            name="email"
-            type="email"
-            inputmode="email"
-            autocomplete="email"
-            placeholder="Enter Email"
-            required
-          />
-          <button class="join-button" type="submit">Join</button>
-        </form>
-        <p class="status-message status-message-bottom" data-status aria-live="polite"></p>
+        <section class="content-block detail-block" aria-labelledby="why-it-matters">
+          <h2 class="section-title" id="why-it-matters">Why it matters?</h2>
+          <p>We create moments of reveal.</p>
+          <p>You don’t just wear it. You remember how you got it.</p>
+        </section>
+
+        <section class="content-block detail-block drop-block" aria-labelledby="drop-01">
+          <h2 class="section-title" id="drop-01">Drop 01</h2>
+          <p>500 total packs. No restocks.</p>
+          <p>Only those registered will know when it opens.</p>
+          <p>You’re either early, or you’re watching it after.</p>
+        </section>
+
+        <section class="cta-block cta-block-bottom">
+          <form class="waitlist-form waitlist-form-bottom" data-waitlist-form novalidate>
+            <label class="sr-only" for="email-bottom">Email address</label>
+            <input
+              class="email-input"
+              id="email-bottom"
+              name="email"
+              type="email"
+              inputmode="email"
+              autocomplete="email"
+              placeholder="Enter Email"
+              required
+            />
+            <button class="join-button" type="submit">Join</button>
+          </form>
+          <p class="status-message status-message-bottom" data-status aria-live="polite"></p>
+        </section>
       </section>
     </main>
 
